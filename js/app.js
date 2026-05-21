@@ -233,6 +233,26 @@ async function _migrateToIndividualesCategory() {
   }
 }
 
+async function _migrateShopHours() {
+  try {
+    const openSetting = await settingRepo.findById('shop_hours_open');
+    const closeSetting = await settingRepo.findById('shop_hours_close');
+
+    if (openSetting && openSetting.value !== '07:00') {
+      openSetting.value = '07:00';
+      await settingRepo.update(openSetting);
+      logger.info('App', 'Shop open hours migrated to 07:00');
+    }
+    if (closeSetting && closeSetting.value !== '20:00') {
+      closeSetting.value = '20:00';
+      await settingRepo.update(closeSetting);
+      logger.info('App', 'Shop close hours migrated to 20:00');
+    }
+  } catch (e) {
+    /* settings may not exist, skip */
+  }
+}
+
 function initLogin() {
   const loginScreen = document.getElementById('login-screen');
   const appContainer = document.getElementById('app');
@@ -552,6 +572,7 @@ async function loadSettings() {
     await _migrateWhatsAppNumber();
     await _migrateCajeroPassword();
     await _migrateToIndividualesCategory();
+    await _migrateShopHours();
 
     const hash = window.location.hash.slice(1);
 
