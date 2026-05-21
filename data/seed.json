@@ -1,0 +1,104 @@
+{
+  "categories": [
+    {
+      "id": "cat_1",
+      "name": "Individuales",
+      "description": "Nuestros Sweet Trip individuales",
+      "color": "#5C3A21"
+    }
+  ],
+  "products": [
+    {
+      "id": "prod_1",
+      "name": "Sweet clásico",
+      "price": 12000,
+      "stock": 50,
+      "categoryId": "cat_1",
+      "barcode": "7791000000001",
+      "sku": "SW-CLA",
+      "visible": true,
+      "visible_web": true,
+      "price_web": null,
+      "description": "Nuestro clásico artesanal. Suave, cremoso, perfecto.",
+      "image": "imagenes_productos_logo/sweet clasico..png"
+    },
+    {
+      "id": "prod_2",
+      "name": "Sweet oreo",
+      "price": 12000,
+      "stock": 50,
+      "categoryId": "cat_1",
+      "barcode": "7791000000002",
+      "sku": "SW-ORE",
+      "visible": true,
+      "visible_web": true,
+      "price_web": null,
+      "description": "Nuestra versión con Oreo. Tentación en cada bocado.",
+      "image": "imagenes_productos_logo/Sweet oreo.png"
+    },
+    {
+      "id": "prod_3",
+      "name": "Sweet nuez",
+      "price": 12000,
+      "stock": 50,
+      "categoryId": "cat_1",
+      "barcode": "7791000000003",
+      "sku": "SW-NUE",
+      "visible": true,
+      "visible_web": true,
+      "price_web": null,
+      "description": "Nuestra creación estrella con nuez. Un viaje en cada bocado.",
+      "image": "imagenes_productos_logo/sweet trip club.png"
+    },
+    {
+      "id": "prod_4",
+      "name": "Box x4",
+      "price": 40000,
+      "stock": 25,
+      "categoryId": "cat_1",
+      "barcode": "7791000000004",
+      "sku": "BOX-4",
+      "visible": true,
+      "visible_web": true,
+      "price_web": null,
+      "description": "Caja con 4 Sweet Trip. Ideal para compartir.",
+      "image": ""
+    },
+    {
+      "id": "prod_5",
+      "name": "Box x6",
+      "price": 55000,
+      "stock": 20,
+      "categoryId": "cat_1",
+      "barcode": "7791000000005",
+      "sku": "BOX-6",
+      "visible": true,
+      "visible_web": true,
+      "price_web": null,
+      "description": "Caja con 6 Sweet Trip. La mejor opción para regalar.",
+      "image": ""
+    }
+  ],
+  "users": [
+    { "id": "user_1", "username": "admin", "password": "admV1c3", "role": "admin", "name": "Administrador" },
+    { "id": "user_2", "username": "cajero", "password": "cajero123", "role": "cajero", "name": "Cajero" },
+    { "id": "user_3", "username": "supervisor", "password": "Sup3rV1s0r", "role": "supervisor", "name": "Supervisor" }
+  ],
+  "settings": [
+    { "key": "businessName", "value": "Sweet Trip Club" },
+    { "key": "currency", "value": "ARS" },
+    { "key": "currencySymbol", "value": "$" },
+    { "key": "taxRate", "value": "21" },
+    { "key": "ticketFooter", "value": "Gracias por tu visita. ¡Volvé pronto!" },
+    { "key": "shop_enabled", "value": "true" },
+    { "key": "shop_whatsapp", "value": "5493496592387" },
+    { "key": "shop_primary_color", "value": "#5C3A21" },
+    { "key": "shop_hours_open", "value": "17:00" },
+    { "key": "shop_hours_close", "value": "23:30" },
+    { "key": "shop_takeaway_enabled", "value": "true" },
+    { "key": "shop_delivery_enabled", "value": "true" },
+    { "key": "shop_min_delivery", "value": "0" },
+    { "key": "shop_delivery_cost", "value": "0" },
+    { "key": "shop_banner", "value": "" }
+  ]
+}
