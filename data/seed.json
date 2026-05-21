@@ -5,6 +5,12 @@
       "name": "Individuales",
       "description": "Nuestros Sweet Trip individuales",
       "color": "#5C3A21"
+    },
+    {
+      "id": "cat_3",
+      "name": "Box",
+      "description": "Cajas y combos para compartir",
+      "color": "#D4A574"
     }
   ],
   "products": [
@@ -55,7 +61,7 @@
       "name": "Box x4",
       "price": 40000,
       "stock": 25,
-      "categoryId": "cat_1",
+      "categoryId": "cat_3",
       "barcode": "7791000000004",
       "sku": "BOX-4",
       "visible": true,
@@ -69,7 +75,7 @@
       "name": "Box x6",
       "price": 55000,
       "stock": 20,
-      "categoryId": "cat_1",
+      "categoryId": "cat_3",
       "barcode": "7791000000005",
       "sku": "BOX-6",
       "visible": true,

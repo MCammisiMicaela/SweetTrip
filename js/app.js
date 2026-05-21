@@ -213,9 +213,20 @@ async function _migrateToIndividualesCategory() {
       }
     }
 
-    if (cat2) {
+    if (cat2 && cat2.name === 'Especiales') {
       await categoryRepo.delete('cat_2');
       logger.info('App', 'Removed deprecated category cat_2');
+    }
+
+    const cat3 = categories.find(c => c.id === 'cat_3');
+    if (!cat3) {
+      await categoryRepo.create({
+        id: 'cat_3',
+        name: 'Box',
+        description: 'Cajas y combos para compartir',
+        color: '#D4A574'
+      });
+      logger.info('App', 'Created category cat_3: Box');
     }
   } catch (error) {
     logger.error('App', 'Error migrating to Individuales category', error);
