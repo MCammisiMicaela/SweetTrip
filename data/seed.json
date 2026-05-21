@@ -100,7 +100,7 @@
     { "key": "shop_whatsapp", "value": "5493496592387" },
     { "key": "shop_primary_color", "value": "#5C3A21" },
     { "key": "shop_hours_open", "value": "07:00" },
-    { "key": "shop_hours_close", "value": "20:00" },
+    { "key": "shop_hours_close", "value": "23:00" },
     { "key": "shop_takeaway_enabled", "value": "true" },
     { "key": "shop_delivery_enabled", "value": "true" },
     { "key": "shop_min_delivery", "value": "0" },

@@ -243,10 +243,10 @@ async function _migrateShopHours() {
       await settingRepo.update(openSetting);
       logger.info('App', 'Shop open hours migrated to 07:00');
     }
-    if (closeSetting && closeSetting.value !== '20:00') {
-      closeSetting.value = '20:00';
+    if (closeSetting && closeSetting.value !== '23:00') {
+      closeSetting.value = '23:00';
       await settingRepo.update(closeSetting);
-      logger.info('App', 'Shop close hours migrated to 20:00');
+      logger.info('App', 'Shop close hours migrated to 23:00');
     }
   } catch (e) {
     /* settings may not exist, skip */
